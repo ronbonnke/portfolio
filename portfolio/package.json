@@ -18,7 +18,7 @@
     "react-leaflet": "^4.2.1",
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.77.2",
     "web-vitals": "^2.1.4"
   },
@@ -45,5 +45,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^8.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0"
   }
 }
