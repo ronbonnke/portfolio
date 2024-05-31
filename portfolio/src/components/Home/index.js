@@ -9,13 +9,12 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           Hi there, <br />
-          I'm Ron
+          I'm Ron Bonnke
           {/* <img src={LogoTitle} alt="developer" /> */}
-          bonnke
           <br />
-          FullStack WebDeveloper
+          Fullstack Webdeveloper
         </h1>
-        <h2>Frontend Developer / JAVA / JavaScript </h2>
+        <h2>Frontend Developer / Java / JavaScript </h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
