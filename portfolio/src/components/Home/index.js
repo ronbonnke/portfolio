@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/RR.png'
 import './index.scss'
@@ -34,9 +34,10 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    setTimeout(() => {
-      return setLetterClass('text-animate-hover')
+    const timeout = setTimeout(() => {
+      setLetterClass('text-animate-hover')
     }, 4000)
+    return () => clearTimeout(timeout)
   }, [])
 
   return (
@@ -58,10 +59,10 @@ const Home = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={jobArray}
-            idx={22}
+            idx={25}
           />
         </h1>
-        <h2>Frontend Developer / Java / JavaScript Expert </h2>
+        <h2>Frontend Developer / Java / JavaScript Expert</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>

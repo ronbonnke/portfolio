@@ -1,3 +1,5 @@
+
+
 .home-page {
     .text-zone {
         position: absolute;
@@ -24,7 +26,8 @@
             margin-top: -40px;
             opacity: 0.6;
         }
-        &::after{
+
+        &::after {
             content: '<h1>';
             font-family: "La Belle Aurore";
             color: #ffd700;
@@ -32,18 +35,30 @@
             position: absolute;
             margin-top: 18px;
             margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
+            animation: fadeIn 1s 1.2s backwards;
             opacity: 0.6;
         }
+
         img {
             width: 45px;
             margin-left: 20px;
             height: auto;
-            animation: rotateIn 1s linear both;
+            animation: rotateIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
             animation-delay: 1.4s;
+        }
 
+        @keyframes rotateIn {
+            0% {
+                transform: rotate(90deg); /* Start from -90 degrees for anticlockwise rotation */
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(0deg); /* End at 0 degrees */
+                opacity: 1;
+            }
         }
     }
+
     h2 {
         color: #8d8d8d;
         margin-top: 20px;
@@ -53,6 +68,7 @@
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
+
     .flat-button {
         color: #ffd700;
         font-size: 13px;
@@ -71,5 +87,32 @@
             background-color: #ffd700;
             color: #333;
         }
+    }
+}
+
+.text-animate {
+    opacity: 0;
+    display: inline-block;
+    animation: textAnimate 3s ease-in-out forwards; /* Adjusted for smoothness */
+}
+
+@keyframes textAnimate {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-animate-hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1); /* Slight scale up on hover */
+        color: #ffd700; /* Change color on hover */
     }
 }
