@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/RR.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import Logo from './Logo'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
   const nameArray = ['O', 'N', ' ', 'B', 'O', 'N', 'N', 'K', 'E']
   const jobArray = [
     'F',
@@ -67,6 +69,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }

@@ -1,36 +1,31 @@
 .logo-container {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
     position: absolute;
-    top: 0;
-    right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
+    right: 15%; /* Adjusted to move left */
+    top: 20%;
+  }
+
+  .circle {
+    width: 350px;
+    height: 350px;
+    border: 0.1px solid #ffd700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 0 10px #ffd700, inset 0 0 10px #ffd700; /* Add neon glow inside and outside */
+  }
 
-    svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(30deg) !important;
-    }
-    .solid-logo {
-        position: absolute;
-        top: auto;
-        height: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        opacity: 0;
-        transform: rotateZ(30deg);
-        z-index: 1;
-    }
-}
+  .logo-image {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
 
-.svg-container {
-    stroke: #ffd700;
-    stroke-width: 10px;
-}
+  .circle:hover {
+    border-color: #ffd700;
+    box-shadow: 0 0 20px #ffd700, inset 0 0 20px #ffd700; /* Neon glow inside and outside on hover */
+  }

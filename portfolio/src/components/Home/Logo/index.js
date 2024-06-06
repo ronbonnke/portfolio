@@ -1,25 +1,24 @@
+import React, { useEffect, useRef } from 'react'
 import './index.scss'
-import '../../../assets/images/RR.png'
-import LogoS from '../../../assets/images/rblogo.png'
-import React, { useRef } from 'react'
+import myImage from '../../../assets/images/ron.jpeg'
 
 const Logo = () => {
-  const bgRef = useRef()
-  const outLineLogoRef = useRef()
-  const solidLogoRef = useRef()
+  const circleRef = useRef(null)
+
+  useEffect(() => {
+    const circle = circleRef.current
+
+    setTimeout(() => {
+      circle.style.opacity = '1'
+      circle.style.transform = 'scale(1)'
+    }, 3000)
+  }, [])
 
   return (
     <div className="logo-container">
-      <img className="solid-logo" src={LogoS} alt="r" />
-      <svg width="559pt"
-      height="897pt"
-      version='1.0'
-      viewBox='http://www.w3.org/2000/svg'>
-        <
-        className='svg-container'
-        transform='translate(0 457) scale(.1 -.1)'
-        fill='none'
-        >
+      <div className="circle" ref={circleRef}>
+        <img src={myImage} alt="Logo" className="logo-image" />
+      </div>
     </div>
   )
 }
