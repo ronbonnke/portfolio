@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and passion for web development.
 
-**[Click here to check my website ➡️](https://melodious-pavlova-23f563.netlify.app/)**
+**[Click here to check my website ➡️](https://melodious-pavlova-23f563.netlify.app/)** I'm still working on it, it's not responsive 
 
 ## 🌟 Major Sections
 
