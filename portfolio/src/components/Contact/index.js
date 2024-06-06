@@ -3,6 +3,9 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+// import { FaLocationDot } from 'react-icons/fa6'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -50,7 +53,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in working - especially on small or larger projects
+            I'm interested in working - especially on small or larger projects
             based on web development. However, if you have any other request or
             question, don't hesitate to contact me using the form below.
           </p>
@@ -89,9 +92,48 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+          <div className="info-map">
+            Chikka Gubbi,
+            <br /> #09, St. Antony's church road,
+            <br /> near Gov't school, Bangalore, India
+            <br />
+            <span>ronbonnke789@gmail.com</span>
+          </div>
         </div>
-        <Loader type="pacman" />
+        <div className="map-wrap">
+          {/* <MapContainer
+            center={[13.0568, 77.6931]} // Chikka Gubbi coordinates
+            zoom={13}
+            style={{ height: '100%', width: '100%' }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker position={[13.0568, 77.6931]}>
+              <Popup>
+                Ronbonnke lives here, come over for a cup of coffee <br /> :)
+              </Popup>
+            </Marker>
+          </MapContainer> */}
+          <MapContainer
+            center={[13.05116, 77.60806]} // Chikka Gubbi coordinates
+            zoom={13} // Adjust the zoom level if needed
+            style={{ height: '100%', width: '100%' }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://unpkg.com/leaflet@1.3.3/dist/images/marker-icon-2x.png">OpenStreetMap</a> contributors'
+            />
+            <Marker position={[13.0568, 77.6931]}>
+              <Popup>
+                Ronbonnke lives here, come over for a cup of coffee <br /> :)
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
