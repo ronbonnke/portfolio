@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This project showcases my skills, experience, and passion for web development.
 
+**[Click here to check my website ➡️](https://melodious-pavlova-23f563.netlify.app/)**
+
 ## 🌟 Major Sections
 
 ### 🏠 Home
@@ -27,7 +29,6 @@ Feel free to explore and get in touch if you have any questions or collaboration
 - Leaflet (for maps)
 - SCSS
 
-<!--
 ### 🚀 Getting Started
 1. Clone the repository:
    ```bash
