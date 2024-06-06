@@ -55,7 +55,8 @@ const Contact = () => {
           <p>
             I'm interested in working - especially on small or larger projects
             based on web development. However, if you have any other request or
-            question, don't hesitate to contact me using the form below.
+            question, don't hesitate to contact me using the form below. onClick
+            the mark shown in map. 😉
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -117,7 +118,7 @@ const Contact = () => {
             </Marker>
           </MapContainer> */}
           <MapContainer
-            center={[13.05116, 77.60806]} // Chikka Gubbi coordinates
+            center={[13.0727696, 77.6693496]} // Chikka Gubbi coordinates
             zoom={13} // Adjust the zoom level if needed
             style={{ height: '100%', width: '100%' }}
           >

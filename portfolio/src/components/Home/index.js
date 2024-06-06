@@ -66,7 +66,12 @@ const Home = () => {
               idx={25}
             />
           </h1>
-          <h2>HTML5 / CSS3 / JavaScript / ReactJs / GitHub / DSA in Java </h2>
+          <h2>
+            HTML5 / CSS3 / JavaScript / ReactJs
+            <br />
+            GitHub / PostmanAPI <br />
+            DSA in Java <br />{' '}
+          </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
