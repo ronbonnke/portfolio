@@ -29,6 +29,8 @@ Feel free to explore and get in touch if you have any questions or collaboration
 - Leaflet (for maps)
 - SCSS
 
+
+<!--
 ### 🚀 Getting Started
 1. Clone the repository:
    ```bash
