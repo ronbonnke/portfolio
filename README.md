@@ -7,8 +7,8 @@ Welcome to my personal portfolio! This project showcases my skills, experience, 
 ## 🌟 Major Sections
 
 ### 🏠 Home
-- **Title:** Displaying my name and profession.
-- **Role:** Highlighting my key roles and skills.
+- **Title:** Displaying my name and profession..
+- **Role:** Highlighting my key roles and skills..
 - **Profile Picture:** A visual representation of myself.
 - **Profession:** Briefly mentioning my professional background.
 
